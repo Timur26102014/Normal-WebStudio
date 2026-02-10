@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #212121;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+}
+
+.nav .active {
+  color: #2196f3;
+}
+
+.contacts a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+}
+
+/* ===== PORTFOLIO ===== */
+
+.portfolio {
+  padding: 94px 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filters button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  background: #f5f4fa;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filters .active {
+  background: #2196f3;
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.card {
+  width: 370px;
+  border: 1px solid #eee;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(33,150,243,0.9);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.card-text p {
+  color: #757575;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #2f303a;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer address {
+  font-style: normal;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
